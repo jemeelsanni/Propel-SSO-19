@@ -1,0 +1,559 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Propel sso-24</title>
+
+        
+    
+        
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="Propel-sso-19.css">
+    </head>
+
+    <body>
+        <div class="n-media">
+            <div class="sidenav">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="logo.png"/>
+                        <div>GirlsCanCode</div>
+                    </div>
+                </div>
+                <div class="a">
+                    <a href="#">
+                        <img src="home.png"/>
+                        Home</a>             
+                    <a href="#">
+                        <img src="jobs.png"/>
+                        Jobs</a>
+                    <a href="#">
+                        <img src="financial.png"/>
+                        Financial Services</a>
+                    <div class="cont-p">
+                        <div class="perk-active">
+                            <a href="#">
+                                <img src="perks.png"/>
+                                Perks and Deals</a>
+                        </div>
+                        <div class="highlight"></div>
+                    </div>
+                    <a href="#">
+                        <img src="refer.png"/>
+                        Refer a Friend</a>
+                    <a href="#">
+                        <img src="communitywall.png"/>
+                        Community Wall</a>
+                </div>
+            </div>
+            <div class="lefthead-container">
+                <div class="notification">
+                    <img src="notification.png"/>
+                </div>
+                <div class="help">
+                    <img src="help.png"/>
+                </div>
+                <div class="profile">
+                    <img id="circle" src="maleprofile.jpg"/>
+                    <div>Jane Amarachi</div>
+                    <img class="drop" src="dropdown.png"/>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="line"></div> 
+            </div>
+            <div class="main">
+                <div class="perk-prop">Perks & Deals</div>
+                <div class="main-line">
+                    <div class="line"></div> 
+                </div>
+                <div class="search">
+                    <form>
+                        <button type="submit"><img src="search.png"/> </button>
+                        <input type="text" placeholder="Search.." name="search">
+                    </form>
+                    <div class="sort">
+                        Category
+                        <img src="smalldropdown.png"/>
+                    </div>
+                    <div class="sort">
+                        Location
+                        <img src="smalldropdown.png"/>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="Ellipse 2.png"/>
+                        <div class="h">Workstation Discount<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            <div class="cap">Workspace</div>
+                            <div class="cap1">Within Lagos</div>
+                            <div class="cap2">Sponsored</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem"><button  onclick="on()"><div>Redeem</div><img src="arrow.png"/></button></div>
+                    </div>
+                    <div id="overlay" >
+                        <div id="redeem-container">
+                            <div class="redeem-cont">
+                                <div class="redeem-left">
+                                    <div class="align-up">           
+                                        <img class="workstation-logo" src="Ellipse 2.png"/>
+                                        <div class="h1">Workstation Discount<br/>
+                                            <span><img src="impo.png"/>-20% off your first month</span>
+                                        </div>
+                                    </div> 
+                                    <div class="cont">
+                                        <div class="line"></div> 
+                                    </div>
+                                    <div class="align-bottom">
+                                    <div class="h">About this perk:</div>
+                                    <div class="p">
+                                        Get access to a work space that’s right for your<br/> projects.
+                                        Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit.                    
+                                    </div>
+                                    <div class="h">Validity:</div>
+                                    <div class="p">
+                                        Not valid for membership renewals, for those<br/> with a current membership,
+                                        or those who were<br/> Sam’s Club members less than 6 months prior to<br/>
+                                        September 1st, 2021.                    
+                                    </div>
+                                    <div class="align-overlay-button">
+                                        <div class="overlay-button">
+                                            <button  onclick="off()" style="background: #0045F6;">
+                                                <img src="perk-button.png"/>
+                                                <div  style="color:#FFFFFF">Redeem Perk</div>
+                                            </button>
+                                            <button style="background: #FFFFFF">
+                                                <img src="share-button.png"/>
+                                                <div>Share</div>
+                                            </button>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redeem-right">
+                                <div class="coupon-alert">Hurry! Your coupon will expire soon</div>
+                                <div id="countdown">
+                                    <div class="cd-box">
+                                        <div class="numbers days" id="br1">00</div>
+                                        <div class="strings timeRefDays" id="br2">Days</div>
+                                    </div>
+                                    <div class="cd-box">
+                                        <div class="numbers hours">00</div>
+                                        <div class="strings timeRefHours">Hours</div>
+                                    </div>
+                                    <div class="cd-box">
+                                        <div class="numbers minutes">00</div>
+                                        <div class="strings timeRefMinutes">Minutes</div>
+                                    </div>
+                                    <div class="cd-box">
+                                        <div class="numbers seconds" id="br3">00</div>
+                                        <div class="strings timeRefSeconds" id="br4">Seconds</div>
+                                    </div>
+                                </div>
+                                <img src="barcode.png"/>
+                                <div class="scan">Scan this QR Code to redeem perk or<br/> use this link:<br/>
+                                    <span>https://workstation.com.ng/PROPEL-20</span></div>
+                                </div>
+                            </div>
+                            <img class="close" onclick="off()" src="Vector3.png"/>
+                        </div> 
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="Ellipse3.png"/>
+                        <div class="h">EdenLife Food Plan<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            
+                            <div class="cap1">Well-being</div>
+                            <div class="cap2">Selfcare</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="nguvu.png"/>
+                        <div class="h">Nguvu Mental Health Plan<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            <div class="cap3">Mental health</div>
+                            <div class="cap2">Selfcare</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="Ellipse3.png"/>
+                        <div class="h">EdenLife Food Plan<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            
+                            <div class="cap1">Well-being</div>
+                            <div class="cap2">Selfcare</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="nguvu.png"/>
+                        <div class="h">Nguvu Mental Health Plan<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            <div class="cap3">Mental health</div>
+                            <div class="cap2">Selfcare</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="Ellipse 2.png"/>
+                        <div class="h">Workstation Discount<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            <div class="cap">Workspace</div>
+                            <div class="cap1">Within Lagos</div>
+                            <div class="cap2">Sponsored</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="Ellipse 2.png"/>
+                        <div class="h">Workstation Discount<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            <div class="cap">Workspace</div>
+                            <div class="cap1">Within Lagos</div>
+                            <div class="cap2">Sponsored</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="Ellipse3.png"/>
+                        <div class="h">EdenLife Food Plan<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            
+                            <div class="cap1">Well-being</div>
+                            <div class="cap2">Selfcare</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    <div class="grid">
+                        <img class="perk-right" src="Frame 91.png"/>
+                        <img class="workstation-logo" src="nguvu.png"/>
+                        <div class="h">Nguvu Mental Health Plan<br/>
+                            <span><img src="impo.png"/>-20% off your first month</span>
+                        </div>
+                        <div class="p">
+                            Get access to a work space that’s right for your projects.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.                    
+                        </div>
+                        <div class="cap-align">
+                            <div class="cap3">Mental health</div>
+                            <div class="cap2">Selfcare</div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="line"></div> 
+                        </div>
+                        <div class="redeem">Redeem<img src="arrow.png"/></div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="logo-head">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                <div><img src="jd.png" /></div>
+                <div class="logo-container">
+                    <img src="logo1.png"/>
+                    <div>GirlsCanCode</div>
+                </div>
+                </div>
+                <div class="lefthead-containers">
+                    <div class="notifications">
+                        <img src="notification.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="line-cont">
+                <div class="line"></div> 
+            </div>
+            
+            <div class="aligns">
+                <div class="job-prop">Perks & Deals</div>
+                <div class="line-cont">
+                    <div class="line"></div> 
+                </div>
+                <div class="search">
+                    <form>
+                        <button type="submit"><img src="search.png"/> </button>
+                        <input type="text" placeholder="Search.." name="search">
+                    </form>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="sort">
+                            Country
+                            <img src="smalldropdown.png"/>
+                        </div>
+                        <div class="sort">
+                            Expertise
+                            <img src="smalldropdown.png"/>
+                        </div>
+                    </div>
+                </div>
+
+                <br/>
+
+                <div>
+                    <div class="perk-space">
+                        <div class="perks">
+                            <div class="align">
+                                <div class="h">Workstation<br/> Discount Coupon</div>
+                                <img src="Frame 32.png"/>
+                            </div>
+                            <div class="i"><img src="info.png"/>
+                                <div>20% off your first month</div>
+                            </div>
+                            <div class="p">Get access to a workspace that’s
+                                right for your projects. Lorem
+                                ipsum dolor sit amet, consecteur
+                                adipiscing elit</div>
+                            <div class="cpe">
+                                <div class="cap0">Workspace</div>
+                                <div class="cap1">Sponsored</div>
+                            </div>
+                            <div class="cpe">
+                                <div class="cap2">Within Lagos</div>
+                                <div class="cap3">....</div>
+                            </div>
+                            <div class="perk1"><img src="per.png"/></div>
+                            <div class="red">
+                                <div>Redeem</div>
+                                <img src="arrow1.png" />
+                            </div>
+                        </div>
+                        
+                        <div class="perks">
+                            <div class="align">
+                                <div class="h">Buy Now, Pay<br/> Later with Migo</div>
+                                
+                            </div>
+                            <div class="i"><img src="info.png"/>
+                                <div>Access low interest rates</div>
+                            </div>
+                            <div class="p">Get access to a workspace that’s
+                                right for your projects. Lorem
+                                ipsum dolor sit amet, consecteur
+                                adipiscing elit</div>
+                            <div class="cpe">
+                                <div class="cap0">Work tools</div>
+                                <div class="cap1">Credit</div>
+                            </div>
+                            <div class="cpe">
+                                <div class="cap2">Marketplace</div>
+                                <div class="cap3">....</div>
+                            </div>
+                            <div class="perk1"><img src="per.png"/></div>
+                            <div class="red">
+                                <div>Get Started</div>
+                                <img src="arrow1.png" />
+                            </div>
+                        </div>
+                        
+                        <div class="perks">
+                            <div class="align">
+                                <div class="h">Workstation<br/> Discount Coupon</div>
+                                <img src="Frame 32.png"/>
+                            </div>
+                            <div class="i"><img src="info.png"/>
+                                <div>20% off your first month</div>
+                            </div>
+                            <div class="p">Get access to a workspace that’s
+                                right for your projects. Lorem
+                                ipsum dolor sit amet, consecteur
+                                adipiscing elit</div>
+                            <div class="cpe">
+                                <div class="cap0">Workspace</div>
+                                <div class="cap1">Sponsored</div>
+                            </div>
+                            <div class="cpe">
+                                <div class="cap2">Within Lagos</div>
+                                <div class="cap3">....</div>
+                            </div>
+                            <div class="perk1"><img src="per.png"/></div>
+                            <div class="red">
+                                <div>Redeem</div>
+                                <img src="arrow1.png" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        
+            
+        </div>
+
+
+        <script>
+            function on() {
+              document.getElementById("overlay").style.display = "block";
+            }
+            
+            function off() {
+              document.getElementById("overlay").style.display = "none";
+            }
+
+
+            $(document).ready(function(){
+	//
+  (function(e){
+		e.fn.countdown = function (t, n){
+			function i(){
+				eventDate = Date.parse(r.date) / 1e3;
+				currentDate = Math.floor(e.now() / 1e3);
+				//
+				if(eventDate <= currentDate){
+					n.call(this);
+					clearInterval(interval)
+				}
+				//
+				seconds = eventDate - currentDate;
+				days = Math.floor(seconds / 86400);
+				seconds -= days * 60 * 60 * 24;
+				hours = Math.floor(seconds / 3600);
+				seconds -= hours * 60 * 60;
+				minutes = Math.floor(seconds / 60);
+				seconds -= minutes * 60;
+				//
+				days == 1 ? thisEl.find(".timeRefDays").text("Days") : thisEl.find(".timeRefDays").text("Days");
+				hours == 1 ? thisEl.find(".timeRefHours").text("Hours") : thisEl.find(".timeRefHours").text("Hours");
+				minutes == 1 ? thisEl.find(".timeRefMinutes").text("Minutes") : thisEl.find(".timeRefMinutes").text("Minutes");
+				seconds == 1 ? thisEl.find(".timeRefSeconds").text("Seconds") : thisEl.find(".timeRefSeconds").text("Seconds");
+				//
+				if(r["format"] == "on"){
+					days = String(days).length >= 2 ? days : "0" + days;
+					hours = String(hours).length >= 2 ? hours : "0" + hours;
+					minutes = String(minutes).length >= 2 ? minutes : "0" + minutes;
+					seconds = String(seconds).length >= 2 ? seconds : "0" + seconds
+				}
+				//
+				if(!isNaN(eventDate)){
+					thisEl.find(".days").text(days);
+					thisEl.find(".hours").text(hours);
+					thisEl.find(".minutes").text(minutes);
+					thisEl.find(".seconds").text(seconds)
+				}
+        else{
+          errorMessage = "Invalid date. Example: 27 March 2015 17:00:00";
+					alert(errorMessage);
+					console.log(errorMessage);
+					clearInterval(interval)
+				}
+			}
+			//
+			var thisEl = e(this);
+			var r = {
+				date: null,
+				format: null
+			};
+			//
+			t && e.extend(r, t);
+			i();
+			interval = setInterval(i, 1e3)
+		}
+	})(jQuery);
+	//
+	$(document).ready(function(){
+		function e(){
+			var e = new Date;
+			e.setDate(e.getDate() + 60);
+			dd = e.getDate();
+			mm = e.getMonth() + 1;
+			y = e.getFullYear();
+			futureFormattedDate = mm + "/" + dd + "/" + y;
+			return futureFormattedDate
+		}
+		//
+		$("#countdown").countdown({
+			date: "31 July 2022 23:59:59", // change date/time here - do not change the format!
+			format: "on"
+		});
+	});
+});
+            </script>
+    </body>
+</html>    
